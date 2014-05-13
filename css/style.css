@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+body{
+	font-family: "Open Sans";
+	font-size: 14px;
+  text-decoration: none;
+}
+
+.main-menu{
+	font-family: "Open Sans";
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.secondary-menu{
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: normal;
+  color: #000!important;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+.secondary-menu:hover {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.selected {
+  background: white!important;
+  color: black!important;
+  letter-spacing: 1px;
+  font-size: 14px;
+  -webkit-border-top-left-radius: solid 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.jp{
+  font-size: 30px;
+}
+
+#jp-left{
+  font-family: 'Bad Script', cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+#resume-btn{
+  margin-bottom: 15px;
+}
