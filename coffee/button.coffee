@@ -1,32 +1,45 @@
 $ ->
+  $(".content").hide()
+  $(".mainPage").show()
+
+  $(window).scroll ->
+    offset = 220
+    duration = 500
+    if $(@).scrollTop() > offset
+      $(".back-to-top").fadeIn duration
+    else
+      $(".back-to-top").fadeOut duration
+    return
+
+  $(".back-to-top").click (e) ->
+    e.preventDefault()
+    $("html, body").animate
+      scrollTop: 0
+    , 500
+    false
+
   $("#menu-toggle").click (e) ->
     e.preventDefault()
     $("#wrapper").toggleClass "active"
     $(@).toggleClass "hidden"
 
   $("#jp-left").click (e) ->
-    e.preventDefault()
     toggle_sidebar()
 
-  $("#profile-btn").click () ->
+  $(".page").click () ->
     toggle_selected($(@))
-    $(".profile").removeClass "hidden"
-
-  $("#resume-btn").click () ->
-    toggle_selected($(@))
-    $(".resume").removeClass "hidden"
-
-  $("#smth-btn").click () ->
-    toggle_selected($(@))
-    $(".work").removeClass "hidden"
 
   toggle_selected = (btn) ->
     toggle_sidebar()
     menu = $(".secondary-menu")
     menu.children().removeClass "selected"
     btn.children().addClass "selected"
-    contents = $(".page-content")
-    contents.children().addClass "hidden"
+
+    page = btn.data("page")
+    $(".currentPage").fadeOut "normal", ->
+      $(@).removeClass "currentPage"
+      $(".#{page}").fadeIn "normal", ->
+        $(@).addClass "currentPage"
 
   toggle_sidebar = () ->
     if $("#wrapper").hasClass "active"

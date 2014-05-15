@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 body{
-	font-family: "Open Sans";
-	font-size: 14px;
+  font-family: "Open Sans";
+  font-size: 14px;
   text-decoration: none;
 }
 
 .main-menu{
-	font-family: "Open Sans";
+  font-family: "Open Sans";
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -52,4 +52,23 @@ body{
 
 #resume-btn{
   margin-bottom: 15px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(135, 135, 135, 0.50);
+  padding: 0.3em;
+  display: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.back-to-top:hover {
+  text-decoration: none;
+  color: black!important;
 }
