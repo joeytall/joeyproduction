@@ -3,9 +3,9 @@
 
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<meta name="description" content="My own site!">
+<meta name="author" content="Joey Liu">
 
 <link rel="shortcut icon" href="img/jp.png">
 <title>Starter Template for Bootstrap</title>
@@ -20,21 +20,26 @@
 <!-- Local Source -->
 <link href="css/simple-sidebar.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/stars.css">
 </head>
 
-<body>
+<body class="stardust">
 <div class="container">
   <div id="wrapper">
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a id="jp-left" href="#">J.p</a></li>
+        <li class="sidebar-brand"><a id="jp-left" href="#" data-page="mainPage">J.p</a></li>
         <li class="main-menu">Work.</li>
-        <li class="secondary-menu page" id="smth-btn" data-page="work"><a href="#">PORTFORILO</a></li>
+        <li class="secondary-menu page" data-page="portforlio"><a href="#">PORTFORILO</a></li>
+        <li class="secondary-menu page" data-page="web"><a href="#">WEB DESIGN</a></li>
+        <li class="secondary-menu page" data-page="logo"><a href="#">LOGO DESIGN</a></li>
+        <li class="secondary-menu page" data-page="developer"><a href="#">DEVELOPER</a></li>
         <li class="main-menu">About.</li>
-        <li class="secondary-menu page" id="profile-btn" data-page="profile"><a href="#">PROFILE</a></li>
-        <li class="secondary-menu page" id="resume-btn" data-page="resume"><a href="#">RESUME</a></li>
+        <li class="secondary-menu page" data-page="profile"><a href="#">PROFILE</a></li>
+        <li class="secondary-menu page" data-page="resume"><a href="#">RESUME</a></li>
+        <li class="secondary-menu page" id="blog-btn" data-page="blog"><a href="#">BLOG</a></li>
         <li class="secondary-menu"><a href="https://www.facebook.com/joeytall.liu" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
         <li class="secondary-menu"><a href="https://github.com/joeytall" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
         <li class="secondary-menu"><a href="http://www.linkedin.com/in/joeytall" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
@@ -48,106 +53,122 @@
     <!-- Page content -->
     <div id="page-content-wrapper">
       <div class="content-header">
-        <a id="menu-toggle" href="#" class="fa fa-chevron-left fa-2x"></a>
+        <a id="menu-toggle" href="#" class="fa fa-chevron-left fa-2x white"></a>
         <div class="progress progress-striped active hidden">
           <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" style="width: 10%;">
             <span class="sr-only">60% Complete</span>
           </div>
         </div>
-        <h1 class="jp"> Joey Production.</h1>
+        <h1 class="jp white"> Joey Production.</h1>
       </div>
       <!-- Keep all page content within the page-content inset div! -->
       <div class="page-content inset">
-        <div class="content mainPage currentPage">main page</div>
-        <div class="content work row">
-          <div class="col-md-12">
-            <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
+        <div class="content mainPage currentPage">
+          <div class="grid">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+            <div class="star star-6"></div>
+            <div class="star star-7"></div>
           </div>
-          <div class="col-md-6">
-            <p class="well">The template still uses the default Bootstrap rows and columns.</p>
+          <div class="wrap clearfix">
+            <section class="clearfix">
+              <ul class="solarsystem">
+                <li class="sun"><a href="#sun"><span>Sun</span></a></li>
+                <li class="earth"><a href="#earth"><span>Earth</span></a></li>
+                <li class="earth one"><a href="#earth one"><span>Earth<span class="moon mone"> &amp; Moon</span></span></a></li>
+              </section>
+            </div>
           </div>
-          <div class="col-md-6">
-            <p class="well">But the full-width layout means that you wont be using containers.</p>
+          <div class="content blog">
+            <div class="jumbotron">
+              <h2>Stupid Online Job App Question:</h2>
+              <p>In 150 characters or fewer, tell us what makes you unique. <br>
+              Try to be creative and say something that will catch our eye!*</p>
+              <p><a class="btn btn-danger btn-lg" role="button">Hey, I'm Bob...</a></p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
+          <div class="content portforlio row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
+            </div>
+            <div class="col-md-6">
+              <p class="well">The template still uses the default Bootstrap rows and columns.</p>
+            </div>
+            <div class="col-md-6">
+              <p class="well">But the full-width layout means that you wont be using containers.</p>
+            </div>
+            <div class="col-md-4">
+              <p class="well">Three Column Example</p>
+            </div>
+            <div class="col-md-4">
+              <p class="well">Three Column Example</p>
+            </div>
+            <div class="col-md-4">
+              <p class="well">You get the idea! Do whatever you want in the page content area!</p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
+          <div class="content web">web design</div>
+          <div class="content logo">logo</div>
+          <div class="content developer">developer</div>
+          <div class="content bubble">bubble tea </div>
+          <div class="content profile">
+            <img id="profilePic" src="img/profile.png" class="img-rounded" alt="profile">
+            <div class="row" id="description">
+              <p class="well col-lg-8 col-md-7 col-sm-6">Diligent Programmer, Passionate Gamer, Movie Lover, Quick Study...<br><br>
+              Goal: A Creative Perfectionist.
+              </p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p class="well">You get the idea! Do whatever you want in the page content area!</p>
-          </div>
-          <div class="col-md-12">
-            <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">The template still uses the default Bootstrap rows and columns.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">But the full-width layout means that you wont be using containers.</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">You get the idea! Do whatever you want in the page content area!</p>
-          </div>
-          <div class="col-md-12">
-            <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">The template still uses the default Bootstrap rows and columns.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">But the full-width layout means that you wont be using containers.</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">You get the idea! Do whatever you want in the page content area!</p>
-          </div>
-          <div class="col-md-12">
-            <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">The template still uses the default Bootstrap rows and columns.</p>
-          </div>
-          <div class="col-md-6">
-            <p class="well">But the full-width layout means that you wont be using containers.</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">Three Column Example</p>
-          </div>
-          <div class="col-md-4">
-            <p class="well">You get the idea! Do whatever you want in the page content area!</p>
+          <div class="content resume">
+            <p><a class="btn btn-primary btn-lg" role="button" target="_blank" href="file/joey resume.pdf">PDF</a></p>
           </div>
         </div>
-        <div class="content bubble">bubble tea </div>
-        <div class="content profile">my face</div>
-        <div class="content resume">my resume</div>
+      </div>
+      <a href="#" class="back-to-top fa fa-chevron-up fa-2x"></a>
+      <div class="footer">
+        All Rights Reserved © 2014. Designed by Joey Liu.
       </div>
     </div>
-    <a href="#" class="back-to-top fa fa-chevron-up fa-2x"></a>
   </div>
-</div>
-<!-- JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
-<script src="js/button.js"></script>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/stars.js"></script>
 
-<!-- Custom JavaScript for the Menu Toggle -->
-</body>
+  <!-- Custom JavaScript for the Menu Toggle -->
+  </body>
 
-</html>
+
+  </html>

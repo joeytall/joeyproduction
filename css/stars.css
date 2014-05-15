@@ -1,0 +1,232 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+
+
+section {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.wrap {
+    padding: 60px 0;
+}
+
+/* logo */
+#jp-left{
+  -webkit-animation: 3s fade infinite alternate;
+}
+
+/* stars */
+.grid {
+  margin: 100px auto;
+  position: relative;
+}
+.grid .star {
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: 2s fade infinite alternate;
+}
+
+.grid .star.star-1 {
+  top: 90px;
+  left: -90px;
+  -webkit-animation-delay: .1s;
+}
+.grid .star.star-2 {
+  top: -120px;
+  right: 300px;
+  -webkit-animation-delay: .4s;
+}
+.grid .star.star-3 {
+  top: 110px;
+  left: 50px;
+  -webkit-animation-delay: .7s;
+}
+.grid .star.star-4 {
+  top: 400px;
+  left: 100px;
+  -webkit-animation-delay: .9s;
+}
+.grid .star.star-5 {
+  top: 600px;
+  left: -30px;
+  -webkit-animation-delay: .5s;
+}
+.grid .star.star-6 {
+  top: 450px;
+  left: -150px;
+  -webkit-animation-delay: .2s;
+}
+.grid .star.star-7 {
+  bottom: 100px;
+  left: 90px;
+  -webkit-animation-delay: .8s;
+}
+
+
+/* Solar System Styles */
+ul.solarsystem {
+    position: relative;
+    height: 440px;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+}
+ul.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    /* border: 2px solid #808492; */
+}
+ul.solarsystem li span {
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    -webkit-border-radius: 65px;
+    -moz-border-radius: 65px;
+    border-radius: 65px;
+}
+
+ul.solarsystem li.sun {
+    width: 240px;
+    height: 240px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    border-radius: 120px;
+    background: #fc3;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.22, rgb(204,153,0)),
+        color-stop(1, rgb(255,219,112))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(204,153,0) 22%,
+        rgb(255,219,112) 100%
+    );
+    top: 2px;
+    left: 220px;
+    border: none;
+    -webkit-box-shadow: 0 0 50px #c90;
+    -moz-box-shadow: 0 0 50px #c90;
+    box-shadow: 0 0 50px #c90;
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+ul.solarsystem li.sun span {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+ul.solarsystem li.earth {
+    width: 620px;
+    height: 620px;
+    -webkit-border-radius: 360px;
+    -moz-border-radius: 360px;
+    border-radius: 360px;
+    top: -190px;
+    left: 30px;
+    z-index: 1;
+}
+ul.solarsystem li.earth span {
+    background: #aa4200;
+    height: 30px;
+    width: 30px;
+    top: 40px;
+    left: 115px;
+}
+ul.solarsystem li.earth span.moon {
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    top: 2px;
+    left: 2px;
+}
+
+ul.solarsystem li.earth.one {
+    width: 420px;
+    height: 420px;
+    -webkit-border-radius: 210px;
+    -moz-border-radius: 210px;
+    border-radius: 210px;
+    top: -80px;
+    left: 130px;
+    z-index: 1;
+    border: 1;
+}
+ul.solarsystem li.earth.one span {
+    background: #1E2B47;
+    height: 80px;
+    width: 80px;
+    top: 60px;
+    left: 345px;
+}
+ul.solarsystem li.earth.one span.moon.mone {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #ffffff;
+    top: 12px;
+    left: -15px;
+}
+
+ul.solarsystem li.earth span.moon {
+}
+
+/* CSS3 Animations */
+ul.solarsystem li {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+}
+ul.solarsystem li.earth span {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:moon;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:moon;
+}
+
+ul.solarsystem li.earth {-webkit-animation-duration:42s; -moz-animation-duration:42s;}
+ul.solarsystem li.earth.one {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
+ul.solarsystem li.earth span {-webkit-animation-duration:3s; -moz-animation-duration:3s;}
+
+@-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+@-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+
+@-moz-keyframes orbit { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+@-moz-keyframes moon { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+
+*ul.solarsystem:hover li {-webkit-animation-play-state: paused;}
+
+@-webkit-keyframes fade {
+  to {
+    opacity: .2;
+    transform: scale(0.7);
+  }
+}

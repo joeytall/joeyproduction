@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 body{
+  z-index: 1;
+}
+
+.content{
   font-family: "Open Sans";
   font-size: 14px;
   text-decoration: none;
@@ -13,11 +17,14 @@ body{
   font-weight: bold;
 }
 
+.stardust{
+  background-image: url('../img/stardust.png')
+}
+
 .secondary-menu{
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: normal;
-  color: #000!important;
   line-height: 1.5;
   margin-left: 10px;
 }
@@ -42,15 +49,21 @@ body{
 
 .jp{
   font-size: 30px;
+  z-index: 30;
+}
+
+.white{
+  color: white!important;
 }
 
 #jp-left{
   font-family: 'Bad Script', cursive;
   font-weight: 400;
   font-size: 30px;
+  color: white;
 }
 
-#resume-btn{
+#blog-btn{
   margin-bottom: 15px;
 }
 
@@ -71,4 +84,24 @@ body{
 .back-to-top:hover {
   text-decoration: none;
   color: black!important;
+}
+
+.footer {
+  font-family: "Open Sans";
+  font-size: 11px;
+  color: #999999;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#description {
+  margin: auto;
+}
+
+#profilePic {
+  width: 100%;
+  height: 100%;
+  max-width: 555px;
+  margin-bottom: 10px;
 }

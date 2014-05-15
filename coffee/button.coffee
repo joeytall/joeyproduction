@@ -24,10 +24,16 @@ $ ->
     $(@).toggleClass "hidden"
 
   $("#jp-left").click (e) ->
-    toggle_sidebar()
+    toggle_selected($(@))
+    $("body").addClass "stardust"
+    $(".jp").addClass "white"
+    $("#menu-toggle").addClass "white"
 
   $(".page").click () ->
     toggle_selected($(@))
+
+  $(".inset").click () ->
+    toggle_sidebar()
 
   toggle_selected = (btn) ->
     toggle_sidebar()
@@ -36,8 +42,13 @@ $ ->
     btn.children().addClass "selected"
 
     page = btn.data("page")
+    $(".footer").fadeOut "normal"
+    $("body").removeClass "stardust"
+    $(".jp").removeClass "white"
+    $("#menu-toggle").removeClass "white"
     $(".currentPage").fadeOut "normal", ->
       $(@).removeClass "currentPage"
+      $(".footer").fadeIn "slow"
       $(".#{page}").fadeIn "normal", ->
         $(@).addClass "currentPage"
 
