@@ -21,6 +21,7 @@
 <link href="css/simple-sidebar.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/stars.css">
+
 </head>
 
 <body class="stardust">
@@ -32,13 +33,10 @@
       <ul class="sidebar-nav">
         <li class="sidebar-brand"><a id="jp-left" href="#" data-page="mainPage">J.p</a></li>
         <li class="main-menu">Work.</li>
-        <li class="secondary-menu page" data-page="portforlio"><a href="#">PORTFORILO</a></li>
-        <li class="secondary-menu page" data-page="web"><a href="#">WEB DESIGN</a></li>
         <li class="secondary-menu page" data-page="logo"><a href="#">LOGO DESIGN</a></li>
-        <li class="secondary-menu page" data-page="developer"><a href="#">DEVELOPER</a></li>
+        <li class="secondary-menu page" data-page="web"><a href="#">WEB DESIGN</a></li>
         <li class="main-menu">About.</li>
         <li class="secondary-menu page" data-page="profile"><a href="#">PROFILE</a></li>
-        <li class="secondary-menu page" data-page="resume"><a href="#">RESUME</a></li>
         <li class="secondary-menu page" id="blog-btn" data-page="blog"><a href="#">BLOG</a></li>
         <li class="secondary-menu"><a href="https://www.facebook.com/joeytall.liu" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
         <li class="secondary-menu"><a href="https://github.com/joeytall" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
@@ -54,11 +52,6 @@
     <div id="page-content-wrapper">
       <div class="content-header">
         <a id="menu-toggle" href="#" class="fa fa-chevron-left fa-2x white"></a>
-        <div class="progress progress-striped active hidden">
-          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" style="width: 10%;">
-            <span class="sr-only">60% Complete</span>
-          </div>
-        </div>
         <h1 class="jp white"> Joey Production.</h1>
       </div>
       <!-- Keep all page content within the page-content inset div! -->
@@ -76,99 +69,142 @@
           <div class="wrap clearfix">
             <section class="clearfix">
               <ul class="solarsystem">
-                <li class="sun"><a href="#sun"><span>Sun</span></a></li>
-                <li class="earth"><a href="#earth"><span>Earth</span></a></li>
-                <li class="earth one"><a href="#earth one"><span>Earth<span class="moon mone"> &amp; Moon</span></span></a></li>
-              </section>
-            </div>
+                <li class="sun" data-page="logo"><a href="#"><span>Sun</span></a></li>
+                <li class="earth" data-page="profile"><a href="#"><span>Earth</span></a></li>
+                <li class="earth one" data-page="web"><a href="#"><span>Earth<span class="moon mone"> &amp; Moon</span></span></a></li>
+              </ul>
+            </section>
           </div>
-          <div class="content blog">
-            <div class="jumbotron">
-              <h2>Stupid Online Job App Question:</h2>
-              <p>In 150 characters or fewer, tell us what makes you unique. <br>
-              Try to be creative and say something that will catch our eye!*</p>
-              <p><a class="btn btn-danger btn-lg" role="button">Hey, I'm Bob...</a></p>
-            </div>
-          </div>
-          <div class="content portforlio row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>...</p>
-                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
+        </div>
+        <div class="content web">
+          <div class="jumbotron row">
+            <h2>Miami Plumbing and Heating Ltd.</h2>
+            <p>Miami Plumbing is a multilanguage site I designed and developed for Franco.
+            He founded the company in 1987, which is now a master plumber and home remodelling contractor serving Vancouver, Burnaby and Surrey.</p>
+            <div class="col-sm-12 col-md-12">
+              <div class="thumbnail text-center">
+                <a class="fancybox-buttons" data-fancybox-group="maimi" href="img/miami/main.png">
+                  <img src="img/miami/main.png" alt="main">
+                </a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>...</p>
-                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="thumbnail text-center">
+                <a class="fancybox-buttons" data-fancybox-group="maimi" href="img/miami/service.png">
+                  <img src="img/miami/service.png" alt="service">
+                </a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>...</p>
-                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
-              </div>
+            <p><a class="btn btn-primary btn-lg fa fa-external-link" role="button" href="http://miamiplumbingandheating.com" target="_blank">  Live View</a></p>
+          </div>
+        </div>
+        <div class="content logo">
+          <div class="jumbotron row">
+            <h2>Long Xuan Tea House</h2>
+            <p>This Bubble Tea place is amazing. I had a blast making the branding design for them, which includes logo, stamp card, front fasial sign, etc..<br>
+            They conveniently located at 4685 Kingsway in Burnaby, British Columbia.
+            I will definitely make a website for them when I had the chance!</p>
+            <div class="col-sm-12 col-md-12 col-lg-12 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="lx" href="img/logo/lx.png">
+                <img src="img/logo/lx.png" alt="slide">
+              </a>
             </div>
-            <div class="col-md-12">
-              <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
+            <div class="col-sm-12 col-md-6 col-lg-6 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="lx" href="img/logo/stamp_card.png">
+                <img src="img/logo/stamp_card.png" alt="slide">
+              </a>
             </div>
-            <div class="col-md-6">
-              <p class="well">The template still uses the default Bootstrap rows and columns.</p>
+            <div class="col-sm-12 col-md-6 col-lg-6 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="lx" href="img/logo/stamp_card_back.png">
+                <img src="img/logo/stamp_card_back.png" alt="slide">
+              </a>
             </div>
-            <div class="col-md-6">
-              <p class="well">But the full-width layout means that you wont be using containers.</p>
+            <div class="col-sm-12 col-md-12 col-lg-12 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="lx" href="img/logo/sign.png">
+                <img src="img/logo/sign.png" alt="slide">
+              </a>
             </div>
-            <div class="col-md-4">
-              <p class="well">Three Column Example</p>
+            <div class="col-sm-12 col-md-12 col-lg-12 thumbnail real">
+              <a class="fancybox-buttons" data-fancybox-group="lx" href="img/logo/real.jpg" title="Picture By Oscar Shi">
+                <img src="img/logo/real.jpg" alt="slide">
+              </a>
             </div>
-            <div class="col-md-4">
-              <p class="well">Three Column Example</p>
+            <p>Thanks to Oscar Shi for taking the wonderful picture.</p>
+            <a class="btn btn-primary btn-lg fa fa-external-link" role="button" href="http://journey-oscarshi.com/authentic-savoury-bubble-tea/" target="_blank">  Detail Article</a>
+            <a class="btn btn-success btn-lg fa fa-external-link" role="button" href="http://portfolio.oscarshi.com/" target="_blank">  Oscar Shi</a>
+          </div>
+          <div class="jumbotron row">
+            <h2>Health Supply</h2>
+            <p>Health Supply is a great startup company founded by my previous houseowner, Jason. I had an opportunity to make some graphic designs for him.</p>
+            <div class="col-sm-12 col-md-12 col-lg-12 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="hs" href="img/logo/hs.png">
+                <img src="img/logo/hs.png" alt="slide">
+              </a>
             </div>
-            <div class="col-md-4">
-              <p class="well">You get the idea! Do whatever you want in the page content area!</p>
+            <div class="col-sm-12 col-md-6 col-lg-6 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="hs" href="img/logo/cover_green.png">
+                <img src="img/logo/cover_green.png" alt="slide">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 thumbnail">
+              <a class="fancybox-buttons" data-fancybox-group="hs" href="img/logo/cover_yellow.png">
+                <img src="img/logo/cover_yellow.png" alt="slide">
+              </a>
             </div>
           </div>
-          <div class="content web">web design</div>
-          <div class="content logo">logo</div>
-          <div class="content developer">developer</div>
-          <div class="content bubble">bubble tea </div>
-          <div class="content profile">
-            <img id="profilePic" src="img/profile.png" class="img-rounded" alt="profile">
-            <div class="row" id="description">
-              <p class="well col-lg-8 col-md-7 col-sm-6">Diligent Programmer, Passionate Gamer, Movie Lover, Quick Study...<br><br>
-              Goal: A Creative Perfectionist.
-              </p>
+        </div>
+        <div class="content profile">
+          <div class="jumbotron row">
+            <h2>Joey Liu</h2>
+            <p>Diligent Programmer, Passionate Gamer, Movie Lover, Quick Study...</p>
+            <p>Goal: A Creative Perfectionist.</p>
+            <div class="col-lg-12 col-md-12 col-sm-12 thumbnail">
+              <a class="fancybox" href="img/profile.jpg" title="Joey Liu">
+                <img id="profilePic" src="img/profile.jpg" class="img-rounded" alt="profile"></a>
             </div>
+            <p><a class="btn btn-primary btn-lg fa fa-external-link" role="button" target="_blank" href="file/joey resume.pdf"> Resume PDF</a></p>
           </div>
-          <div class="content resume">
-            <p><a class="btn btn-primary btn-lg" role="button" target="_blank" href="file/joey resume.pdf">PDF</a></p>
+        </div>
+        <div class="content blog">
+          <div class="jumbotron">
+            <h2>Stupid Online Job App Question:</h2>
+            <p>In 150 characters or fewer, tell us what makes you unique. <br>
+            Try to be creative and say something that will catch our eye!*</p>
+            <p><a class="btn btn-danger btn-lg" role="button">Hey, I'm Bob...</a></p>
           </div>
         </div>
       </div>
-      <a href="#" class="back-to-top fa fa-chevron-up fa-2x"></a>
-      <div class="footer">
-        All Rights Reserved © 2014. Designed by Joey Liu.
-      </div>
+    </div>
+    <a href="#" class="back-to-top fa fa-chevron-up fa-2x"></a>
+    <div class="footer">
+      All Rights Reserved © 2014. Designed by Joey Liu.
     </div>
   </div>
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
-  <script src="js/button.js"></script>
-  <script src="js/stars.js"></script>
+</div>
 
-  <!-- Custom JavaScript for the Menu Toggle -->
-  </body>
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+<script src="js/button.js"></script>
+<script src="js/stars.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://fancyapps.com/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="http://fancyapps.com/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+</body>
 
 
-  </html>
+</html>

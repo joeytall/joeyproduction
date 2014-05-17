@@ -1,6 +1,8 @@
 $ ->
   $(".content").hide()
   $(".mainPage").show()
+  $(".fancybox").fancybox()
+  $(".fancybox-buttons").fancybox()
 
   $(window).scroll ->
     offset = 220

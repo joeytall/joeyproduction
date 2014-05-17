@@ -4,6 +4,8 @@
     var toggle_selected, toggle_sidebar;
     $(".content").hide();
     $(".mainPage").show();
+    $(".fancybox").fancybox();
+    $(".fancybox-buttons").fancybox();
     $(window).scroll(function() {
       var duration, offset;
       offset = 220;
