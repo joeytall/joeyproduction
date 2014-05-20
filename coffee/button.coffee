@@ -4,6 +4,13 @@ $ ->
   $(".fancybox").fancybox()
   $(".fancybox-buttons").fancybox()
 
+  setTimeout (->
+    if !$("#wrapper").hasClass "active"
+      $("#wrapper").addClass "active"
+      $("#menu-toggle").addClass "hidden"
+      $("#rocket").addClass "hidden"
+  ), 3500
+
   $(window).scroll ->
     offset = 220
     duration = 500
@@ -58,3 +65,5 @@ $ ->
     if $("#wrapper").hasClass "active"
       $("#wrapper").toggleClass "active"
       $("#menu-toggle").toggleClass "hidden"
+
+  add_sidebar = () ->
